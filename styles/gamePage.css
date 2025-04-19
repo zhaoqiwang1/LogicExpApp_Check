@@ -1,0 +1,117 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-size: 25px;
+  }
+
+input[type="radio"] {
+    transform: scale(2);
+    margin: 10px;
+}
+
+.enter-id {
+  background-color: lightgreen;
+}
+
+.custom-input {
+    width: 200px;
+    height: 30px;
+    margin: 20px 20px;
+    border: 2px solid #007bff;
+    font-size: 25px;
+}
+
+.phase-select-button, .phaseThree-ctn-button{
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size:30px;
+    padding: 10px 20px;
+    background: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+ }
+
+.container-phaseOne, .container-phaseTwo, .container-phaseThree {
+    display: flex;
+    flex-direction: column;
+ }
+
+.hidden {
+  display: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 600px 600px 600px 600px;
+    gap: 20px;
+  }
+
+.grid-item1, .grid-item2, .grid-item3, .grid-item4 {
+    background-color: lightgray;
+    padding: 50px;
+  }
+
+
+.submit-button-phase1, .submitButton{
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    padding: 5px 10px;
+    background: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ---  dropDown Menu Setups --- */
+.dropdown-content {
+  display: none;
+  font-size: 30px;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-button {
+  font-size: 30px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* 第三阶段的Essay div */
+.phase3-essay-div {
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+  align-items: center;
+  min-height:  10px;
+}
+
+/* custom-bottom-space */
+.custom-bottom-space {
+  height: 20rem;
+}

@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正式实验开始</title>
+    <link rel="stylesheet" href="styles/gamePage.css">
+</head>
+<body>
+    <div>
+        <div class="enter-id" id="enterID">
+            <h2>请输入你的玩家ID:</h2>
+            <input type="text" id="userInput" name="playerId-input" class="custom-input">
+            <button id="submitButton" class="submitButton">提交</button>
+            <p id="outputText"></p>
+        </div>
+        <div class="hidden" id="phaseOne-div">
+            <div class="container-phaseOne" id="phaseOne-content">
+                <h1>第一阶段</h1>
+                <div class="grid-container">
+                    <div class="grid-item1" id="grid-item1">
+                        <div class="js-grid-item1-topic-phase1">
+                        </div>
+                        <div class="select_p0">
+                            <input type="radio" id="option1" name="phase1-gridItem1-choice" value="是">
+                            <label for="option1">是</label>
+                            <input type="radio" id="option2" name="phase1-gridItem1-choice" value="否">
+                            <label for="option2">否</label>
+                            <!-- <button class="submit-button-phase1" id="submit-button">提交</button> -->
+                            <p id="outputText"></p>
+                        </div>
+                    </div>
+                    <div class="grid-item2" id="grid-item2">
+                        <div class="js-grid-item2-topic-phase1">
+                        </div>
+                        <div class="select_p0">
+                            <input type="radio" id="option1" name="phase1-gridItem2-choice" value="是">
+                            <label for="option1">是</label>
+                            <input type="radio" id="option2" name="phase1-gridItem2-choice" value="否">
+                            <label for="option2">否</label>
+                            <!-- <button class="submit-button-phase1" id="submit-button">提交</button> -->
+                            <p id="outputText"></p>
+                        </div>
+                    </div>
+                    <div class="grid-item3" id="grid-item3">
+                        <div class="js-grid-item3-topic-phase1">
+                        </div>
+                        <div class="select_p0">
+                            <input type="radio" id="option1" name="phase1-gridItem3-choice" value="是">
+                            <label for="option1">是</label>
+                            <input type="radio" id="option2" name="phase1-gridItem3-choice" value="否">
+                            <label for="option2">否</label>
+                            <!-- <button class="submit-button-phase1" id="submit-button">提交</button> -->
+                            <p id="outputText"></p>
+                        </div>
+                    </div>
+                    <div class="grid-item4" id="grid-item4">
+                        <div class="js-grid-item4-topic-phase1">
+                        </div>
+                        <div class="select_p0">
+                            <input type="radio" id="option1" name="phase1-gridItem4-choice" value="是">
+                            <label for="option1">是</label>
+                            <input type="radio" id="option2" name="phase1-gridItem4-choice" value="否">
+                            <label for="option2">否</label>
+                            <!-- <button class="submit-button-phase1" id="submit-button">提交</button> -->
+                            <p id="outputText"></p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <br>
+            <p>
+            以上问题都回答完毕后，请点击以下按钮进入到下一页。
+            </p>
+            <button class="phase-select-button js-phaseTwo-enter-button" id="phaseTwoPageHTMLButton">进入第二阶段</button>
+        </div>
+        <div class="hidden" id="phaseTwo-div">
+            <div class="container-phaseTwo" id="phaseTwo-content">
+                <h1>第二阶段</h1>
+                <div class="grid-container">
+                    <div class="grid-item1" id="grid-item1">
+                        <div class="js-grid-item1-topic-phase2">
+                        </div>
+                        <div class="select_contentToRead">
+                            请选择一个观点继续阅读：
+                            <br>
+                            <input type="radio" id="option1" name="phase2-Item1-read" value="第一个">
+                            <label for="option1">第一个</label>
+                            <input type="radio" id="option2" name="phase2-Item1-read" value="第二个">
+                            <label for="option2">第二个</label>
+                            <!-- <button class="submit-button-phase1">提交</button> -->
+                        </div>
+                        <div class="quality1_eval">
+                            请为第一个观点打分：
+                            <br>
+                            <input type="radio" id="option1" name="phase2-Item1-quality1" value="1分">
+                            <label for="option1">1分</label>
+                            <input type="radio" id="option2" name="phase2-Item1-quality1" value="2分">
+                            <label for="option2">2分</label>
+                            <input type="radio" id="option3" name="phase2-Item1-quality1" value="3分">
+                            <label for="option1">3分</label>
+                            <input type="radio" id="option4" name="phase2-Item1-quality1" value="4分">
+                            <label for="option2">4分</label>
+                            <input type="radio" id="option5" name="phase2-Item1-quality1" value="5分">
+                            <label for="option2">5分</label>
+                            <!-- <button class="submit-button-phase1">提交</button> -->
+                        </div>
+                        <div class="quality2_eval">
+                            请为第二个观点打分：
+                            <br>
+                            <input type="radio" id="option1" name="phase2-Item1-quality2" value="1分">
+                            <label for="option1">1分</label>
+                            <input type="radio" id="option2" name="phase2-Item1-quality2" value="2分">
+                            <label for="option2">2分</label>
+                            <input type="radio" id="option3" name="phase2-Item1-quality2" value="3分">
+                            <label for="option1">3分</label>
+                            <input type="radio" id="option4" name="phase2-Item1-quality2" value="4分">
+                            <label for="option2">4分</label>
+                            <input type="radio" id="option5" name="phase2-Item1-quality2" value="5分">
+                            <label for="option2">5分</label>
+                            <!-- <button class="submit-button-phase1">提交</button> -->
+                        </div>
+                        <div class="select_p1">
+                            <input type="radio" id="option1" name="phase2-gridItem1-choice" value="是">
+                            <label for="option1">是</label>
+                            <input type="radio" id="option2" name="phase2-gridItem1-choice" value="否">
+                            <label for="option2">否</label>
+                            <!-- <button class="submit-button-phase1">提交</button> -->
+                            <p id="outputText"></p>
+                        </div>
+                    </div>
+                    <div class="grid-item2" id="grid-item2">
+                        <div class="js-grid-item2-topic-phase2">
+                        </div>
+                        <div class="select_contentToRead">
+                            请选择一个观点继续阅读：
+                            <br>
+                            <input type="radio" id="option1" name="phase2-Item2-read" value="第一个">
+                            <label for="option1">第一个</label>
+                            <input type="radio" id="option2" name="phase2-Item2-read" value="第二个">
+                            <label for="option2">第二个</label>
+                            <!-- <button class="submit-button-phase1">提交</button> -->
+                        </div>
+                        <div class="quality1_eval">
+                            请为第一个观点打分：
+                            <br>
+                            <input type="radio" id="option1" name="phase2-Item2-quality1" value="1分">
+                            <label for="option1">1分</label>
+                            <input type="radio" id="option2" name="phase2-Item2-quality1" value="2分">
+                            <label for="option2">2分</label>
+                            <input type="radio" id="option3" name="phase2-Item2-quality1" value="3分">
+                            <label for="option1">3分</label>
+                            <input type="radio" id="option4" name="phase2-Item2-quality1" value="4分">
+                            <label for="option2">4分</label>
+                            <input type="radio" id="option5" name="phase2-Item2-quality1" value="5分">
+                            <label for="option2">5分</label>
+                            <!-- <button class="submit-button-phase1">提交</button> -->
+                        </div>
+                        <div class="quality2_eval">
+                            请为第二个观点打分：
+                            <br>
+                            <input type="radio" id="option1" name="phase2-Item2-quality2" value="1分">
+                            <label for="option1">1分</label>
+                            <input type="radio" id="option2" name="phase2-Item2-quality2" value="2分">
+                            <label for="option2">2分</label>
+                            <input type="radio" id="option3" name="phase2-Item2-quality2" value="3分">
+                            <label for="option1">3分</label>
+                            <input type="radio" id="option4" name="phase2-Item2-quality2" value="4分">
+                            <label for="option2">4分</label>
+                            <input type="radio" id="option5" name="phase2-Item2-quality2" value="5分">
+                            <label for="option2">5分</label>
+                            <!-- <button class="submit-button-phase1">提交</button> -->
+                        </div>
+                        <div class="select_p1">
+                            <input type="radio" id="option1" name="phase2-gridItem2-choice" value="是">
+                            <label for="option1">是</label>
+                            <input type="radio" id="option2" name="phase2-gridItem2-choice" value="否">
+                            <label for="option2">否</label>
+                            <!-- <button class="submit-button-phase1">提交</button> -->
+                            <p id="outputText"></p>
+                        </div>
+                    </div>
+                    <div class="grid-item3" id="grid-item3">
+                        <div class="js-grid-item3-topic-phase2">
+                        </div>
+                        <div class="select_contentToRead">
+                            请选择一个观点继续阅读：
+                            <br>
+                            <input type="radio" id="option1" name="phase2-Item3-read" value="第一个">
+                            <label for="option1">第一个</label>
+                            <input type="radio" id="option2" name="phase2-Item3-read" value="第二个">
+                            <label for="option2">第二个</label>
+                            <!-- <button class="submit-button-phase1">提交</button> -->
+                        </div>
+                        <div class="quality1_eval">
+                            请为第一个观点打分：
+                            <br>
+                            <input type="radio" id="option1" name="phase2-Item3-quality1" value="1分">
+                            <label for="option1">1分</label>
+                            <input type="radio" id="option2" name="phase2-Item3-quality1" value="2分">
+                            <label for="option2">2分</label>
+                            <input type="radio" id="option3" name="phase2-Item3-quality1" value="3分">
+                            <label for="option1">3分</label>
+                            <input type="radio" id="option4" name="phase2-Item3-quality1" value="4分">
+                            <label for="option2">4分</label>
+                            <input type="radio" id="option5" name="phase2-Item3-quality1" value="5分">
+                            <label for="option2">5分</label>
+                            <!-- <button class="submit-button-phase1">提交</button> -->
+                        </div>
+                        <div class="quality2_eval">
+                            请为第二个观点打分：
+                            <br>
+                            <input type="radio" id="option1" name="phase2-Item3-quality2" value="1分">
+                            <label for="option1">1分</label>
+                            <input type="radio" id="option2" name="phase2-Item3-quality2" value="2分">
+                            <label for="option2">2分</label>
+                            <input type="radio" id="option3" name="phase2-Item3-quality2" value="3分">
+                            <label for="option1">3分</label>
+                            <input type="radio" id="option4" name="phase2-Item3-quality2" value="4分">
+                            <label for="option2">4分</label>
+                            <input type="radio" id="option5" name="phase2-Item3-quality2" value="5分">
+                            <label for="option2">5分</label>
+                            <!-- <button class="submit-button-phase1">提交</button> -->
+                        </div>
+                        <div class="select_p1">
+                            <input type="radio" id="option1" name="phase2-gridItem3-choice" value="是">
+                            <label for="option1">是</label>
+                            <input type="radio" id="option2" name="phase2-gridItem3-choice" value="否">
+                            <label for="option2">否</label>
+                            <!-- <button class="submit-button-phase1">提交</button> -->
+                            <p id="outputText"></p>
+                        </div>
+                    </div>
+                    <div class="grid-item4" id="grid-item4">
+                        <div class="js-grid-item4-topic-phase2">
+                        </div>
+                        <div class="select_contentToRead">
+                            请选择一个观点继续阅读：
+                            <br>
+                            <input type="radio" id="option1" name="phase2-Item4-read" value="第一个">
+                            <label for="option1">第一个</label>
+                            <input type="radio" id="option2" name="phase2-Item4-read" value="第二个">
+                            <label for="option2">第二个</label>
+                            <!-- <button class="submit-button-phase1">提交</button> -->
+                        </div>
+                        <div class="quality1_eval">
+                            请为第一个观点打分：
+                            <br>
+                            <input type="radio" id="option1" name="phase2-Item4-quality1" value="1分">
+                            <label for="option1">1分</label>
+                            <input type="radio" id="option2" name="phase2-Item4-quality1" value="2分">
+                            <label for="option2">2分</label>
+                            <input type="radio" id="option3" name="phase2-Item4-quality1" value="3分">
+                            <label for="option1">3分</label>
+                            <input type="radio" id="option4" name="phase2-Item4-quality1" value="4分">
+                            <label for="option2">4分</label>
+                            <input type="radio" id="option5" name="phase2-Item4-quality1" value="5分">
+                            <label for="option2">5分</label>
+                            <!-- <button class="submit-button-phase1">提交</button> -->
+                        </div>
+                        <div class="quality2_eval">
+                            请为第二个观点打分：
+                            <br>
+                            <input type="radio" id="option1" name="phase2-Item4-quality2" value="1分">
+                            <label for="option1">1分</label>
+                            <input type="radio" id="option2" name="phase2-Item4-quality2" value="2分">
+                            <label for="option2">2分</label>
+                            <input type="radio" id="option3" name="phase2-Item4-quality2" value="3分">
+                            <label for="option1">3分</label>
+                            <input type="radio" id="option4" name="phase2-Item4-quality2" value="4分">
+                            <label for="option2">4分</label>
+                            <input type="radio" id="option5" name="phase2-Item4-quality2" value="5分">
+                            <label for="option2">5分</label>
+                            <!-- <button class="submit-button-phase1">提交</button> -->
+                        </div>
+                        <div class="select_p1">
+                            <input type="radio" id="option1" name="phase2-gridItem4-choice" value="是">
+                            <label for="option1">是</label>
+                            <input type="radio" id="option2" name="phase2-gridItem4-choice" value="否">
+                            <label for="option2">否</label>
+                            <!-- <button class="submit-button-phase1">提交</button> -->
+                            <p id="outputText"></p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <br>
+            <p>
+            以上问题都回答完毕后，请点击以下按钮进入到下一页。
+            </p>
+            <button class="phase-select-button" id="phaseThreePageHTMLButton">进入第三阶段</button>
+        </div>
+        <div class="hidden" id="phaseThree-essay-div">
+            <h3>第三阶段(short essay part)</h3>
+            <p>这里介绍什么是偷换概念。</p>
+            <button class="js-phase3-ctn-rep-phase2 phase-select-button">点击继续(repeat phase 2)</button>
+        </div>
+        <div class="hidden" id="phaseThree-rep-Phase2-div">
+            <p>这里重复第二阶段</p>
+            <div class="grid-container">
+                <div class="grid-item1" id="grid-item1">
+                    <div class="js-item1-phase3-rep-phase2">
+                    </div>
+                    <div class="select_contentToRead">
+                        请选择一个观点继续阅读：
+                        <br>
+                        <input type="radio" id="option1" name="phase3Rep2-Item1-read" value="第一个">
+                        <label for="option1">第一个</label>
+                        <input type="radio" id="option2" name="phase3Rep2-Item1-read" value="第二个">
+                        <label for="option2">第二个</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="quality1_eval">
+                        请为第一个观点打分：
+                        <br>
+                        <input type="radio" id="option1" name="phase3Rep2-Item1-quality1" value="1分">
+                        <label for="option1">1分</label>
+                        <input type="radio" id="option2" name="phase3Rep2-Item1-quality1" value="2分">
+                        <label for="option2">2分</label>
+                        <input type="radio" id="option3" name="phase3Rep2-Item1-quality1" value="3分">
+                        <label for="option1">3分</label>
+                        <input type="radio" id="option4" name="phase3Rep2-Item1-quality1" value="4分">
+                        <label for="option2">4分</label>
+                        <input type="radio" id="option5" name="phase3Rep2-Item1-quality1" value="5分">
+                        <label for="option2">5分</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="quality2_eval">
+                        请为第二个观点打分：
+                        <br>
+                        <input type="radio" id="option1" name="phase3Rep2-Item1-quality2" value="1分">
+                        <label for="option1">1分</label>
+                        <input type="radio" id="option2" name="phase3Rep2-Item1-quality2" value="2分">
+                        <label for="option2">2分</label>
+                        <input type="radio" id="option3" name="phase3Rep2-Item1-quality2" value="3分">
+                        <label for="option1">3分</label>
+                        <input type="radio" id="option4" name="phase3Rep2-Item1-quality2" value="4分">
+                        <label for="option2">4分</label>
+                        <input type="radio" id="option5" name="phase3Rep2-Item1-quality2" value="5分">
+                        <label for="option2">5分</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="select_p1">
+                        <input type="radio" id="option1" name="phase3Rep2-gridItem1-choice" value="是">
+                        <label for="option1">是</label>
+                        <input type="radio" id="option2" name="phase3Rep2-gridItem1-choice" value="否">
+                        <label for="option2">否</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                        <p id="outputText"></p>
+                    </div>
+                </div>
+                <div class="grid-item2" id="grid-item2">
+                    <div class="js-item2-phase3-rep-phase2">
+                    </div>
+                    <div class="select_contentToRead">
+                        请选择一个观点继续阅读：
+                        <br>
+                        <input type="radio" id="option1" name="phase3Rep2-Item2-read" value="第一个">
+                        <label for="option1">第一个</label>
+                        <input type="radio" id="option2" name="phase3Rep2-Item2-read" value="第二个">
+                        <label for="option2">第二个</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="quality1_eval">
+                        请为第一个观点打分：
+                        <br>
+                        <input type="radio" id="option1" name="phase3Rep2-Item2-quality1" value="1分">
+                        <label for="option1">1分</label>
+                        <input type="radio" id="option2" name="phase3Rep2-Item2-quality1" value="2分">
+                        <label for="option2">2分</label>
+                        <input type="radio" id="option3" name="phase3Rep2-Item2-quality1" value="3分">
+                        <label for="option1">3分</label>
+                        <input type="radio" id="option4" name="phase3Rep2-Item2-quality1" value="4分">
+                        <label for="option2">4分</label>
+                        <input type="radio" id="option5" name="phase3Rep2-Item2-quality1" value="5分">
+                        <label for="option2">5分</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="quality2_eval">
+                        请为第二个观点打分：
+                        <br>
+                        <input type="radio" id="option1" name="phase3Rep2-Item2-quality2" value="1分">
+                        <label for="option1">1分</label>
+                        <input type="radio" id="option2" name="phase3Rep2-Item2-quality2" value="2分">
+                        <label for="option2">2分</label>
+                        <input type="radio" id="option3" name="phase3Rep2-Item2-quality2" value="3分">
+                        <label for="option1">3分</label>
+                        <input type="radio" id="option4" name="phase3Rep2-Item2-quality2" value="4分">
+                        <label for="option2">4分</label>
+                        <input type="radio" id="option5" name="phase3Rep2-Item2-quality2" value="5分">
+                        <label for="option2">5分</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="select_p1">
+                        <input type="radio" id="option1" name="phase3Rep2-gridItem2-choice" value="是">
+                        <label for="option1">是</label>
+                        <input type="radio" id="option2" name="phase3Rep2-gridItem2-choice" value="否">
+                        <label for="option2">否</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                        <p id="outputText"></p>
+                    </div>
+                </div>
+                <div class="grid-item3" id="grid-item3">
+                    <div class="js-item3-phase3-rep-phase2">
+                    </div>
+                    <div class="select_contentToRead">
+                        请选择一个观点继续阅读：
+                        <br>
+                        <input type="radio" id="option1" name="phase3Rep2-Item3-read" value="第一个">
+                        <label for="option1">第一个</label>
+                        <input type="radio" id="option2" name="phase3Rep2-Item3-read" value="第二个">
+                        <label for="option2">第二个</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="quality1_eval">
+                        请为第一个观点打分：
+                        <br>
+                        <input type="radio" id="option1" name="phase3Rep2-Item3-quality1" value="1分">
+                        <label for="option1">1分</label>
+                        <input type="radio" id="option2" name="phase3Rep2-Item3-quality1" value="2分">
+                        <label for="option2">2分</label>
+                        <input type="radio" id="option3" name="phase3Rep2-Item3-quality1" value="3分">
+                        <label for="option1">3分</label>
+                        <input type="radio" id="option4" name="phase3Rep2-Item3-quality1" value="4分">
+                        <label for="option2">4分</label>
+                        <input type="radio" id="option5" name="phase3Rep2-Item3-quality1" value="5分">
+                        <label for="option2">5分</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="quality2_eval">
+                        请为第二个观点打分：
+                        <br>
+                        <input type="radio" id="option1" name="phase3Rep2-Item3-quality2" value="1分">
+                        <label for="option1">1分</label>
+                        <input type="radio" id="option2" name="phase3Rep2-Item3-quality2" value="2分">
+                        <label for="option2">2分</label>
+                        <input type="radio" id="option3" name="phase3Rep2-Item3-quality2" value="3分">
+                        <label for="option1">3分</label>
+                        <input type="radio" id="option4" name="phase3Rep2-Item3-quality2" value="4分">
+                        <label for="option2">4分</label>
+                        <input type="radio" id="option5" name="phase3Rep2-Item3-quality2" value="5分">
+                        <label for="option2">5分</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="select_p1">
+                        <input type="radio" id="option1" name="phase3Rep2-gridItem3-choice" value="是">
+                        <label for="option1">是</label>
+                        <input type="radio" id="option2" name="phase3Rep2-gridItem3-choice" value="否">
+                        <label for="option2">否</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                        <p id="outputText"></p>
+                    </div>
+                </div>
+                <div class="grid-item4" id="grid-item4">
+                    <div class="js-item4-phase3-rep-phase2">
+                    </div>
+                    <div class="select_contentToRead">
+                        请选择一个观点继续阅读：
+                        <br>
+                        <input type="radio" id="option1" name="phase3Rep2-Item4-read" value="第一个">
+                        <label for="option1">第一个</label>
+                        <input type="radio" id="option2" name="phase3Rep2-Item4-read" value="第二个">
+                        <label for="option2">第二个</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="quality1_eval">
+                        请为第一个观点打分：
+                        <br>
+                        <input type="radio" id="option1" name="phase3Rep2-Item4-quality1" value="1分">
+                        <label for="option1">1分</label>
+                        <input type="radio" id="option2" name="phase3Rep2-Item4-quality1" value="2分">
+                        <label for="option2">2分</label>
+                        <input type="radio" id="option3" name="phase3Rep2-Item4-quality1" value="3分">
+                        <label for="option1">3分</label>
+                        <input type="radio" id="option4" name="phase3Rep2-Item4-quality1" value="4分">
+                        <label for="option2">4分</label>
+                        <input type="radio" id="option5" name="phase3Rep2-Item4-quality1" value="5分">
+                        <label for="option2">5分</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="quality2_eval">
+                        请为第二个观点打分：
+                        <br>
+                        <input type="radio" id="option1" name="phase3Rep2-Item4-quality2" value="1分">
+                        <label for="option1">1分</label>
+                        <input type="radio" id="option2" name="phase3Rep2-Item4-quality2" value="2分">
+                        <label for="option2">2分</label>
+                        <input type="radio" id="option3" name="phase3Rep2-Item4-quality2" value="3分">
+                        <label for="option1">3分</label>
+                        <input type="radio" id="option4" name="phase3Rep2-Item4-quality2" value="4分">
+                        <label for="option2">4分</label>
+                        <input type="radio" id="option5" name="phase3Rep2-Item4-quality2" value="5分">
+                        <label for="option2">5分</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="select_p1">
+                        <input type="radio" id="option1" name="phase3Rep2-gridItem4-choice" value="是">
+                        <label for="option1">是</label>
+                        <input type="radio" id="option2" name="phase3Rep2-gridItem4-choice" value="否">
+                        <label for="option2">否</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                        <p id="outputText"></p>
+                    </div>
+                </div>
+            </div>
+            <button class="js-phase3-ctn-new-args phase-select-button">点击继续(new args)</button>
+        </div>
+        <div class="hidden" id="phaseThree-newArg-div">
+            <p>这里展示第三阶段的新的argument，每个topic下有一个新的偷换概念的argument.</p>
+            <div class="grid-container">
+                <div class="grid-item1" id="grid-item1">
+                    <div class="js-item1-phase3-newArg">
+                    </div>
+                    <div class="select_contentToRead">
+                        请选择一个观点继续阅读：
+                        <br>
+                        <input type="radio" id="option1" name="phase3newArg-Item1-read" value="第一个">
+                        <label for="option1">第一个</label>
+                        <input type="radio" id="option2" name="phase3newArg-Item1-read" value="第二个">
+                        <label for="option2">第二个</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="quality1_eval">
+                        请为第一个观点打分：
+                        <br>
+                        <input type="radio" id="option1" name="phase3newArg-Item1-quality1" value="1分">
+                        <label for="option1">1分</label>
+                        <input type="radio" id="option2" name="phase3newArg-Item1-quality1" value="2分">
+                        <label for="option2">2分</label>
+                        <input type="radio" id="option3" name="phase3newArg-Item1-quality1" value="3分">
+                        <label for="option1">3分</label>
+                        <input type="radio" id="option4" name="phase3newArg-Item1-quality1" value="4分">
+                        <label for="option2">4分</label>
+                        <input type="radio" id="option5" name="phase3newArg-Item1-quality1" value="5分">
+                        <label for="option2">5分</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="quality2_eval">
+                        请为第二个观点打分：
+                        <br>
+                        <input type="radio" id="option1" name="phase3newArg-Item1-quality2" value="1分">
+                        <label for="option1">1分</label>
+                        <input type="radio" id="option2" name="phase3newArg-Item1-quality2" value="2分">
+                        <label for="option2">2分</label>
+                        <input type="radio" id="option3" name="phase3newArg-Item1-quality2" value="3分">
+                        <label for="option1">3分</label>
+                        <input type="radio" id="option4" name="phase3newArg-Item1-quality2" value="4分">
+                        <label for="option2">4分</label>
+                        <input type="radio" id="option5" name="phase3newArg-Item1-quality2" value="5分">
+                        <label for="option2">5分</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="select_p1">
+                        <input type="radio" id="option1" name="phase3newArg-gridItem1-choice" value="是">
+                        <label for="option1">是</label>
+                        <input type="radio" id="option2" name="phase3newArg-gridItem1-choice" value="否">
+                        <label for="option2">否</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                        <p id="outputText"></p>
+                    </div>
+                </div>
+                <div class="grid-item2" id="grid-item2">
+                    <div class="js-item2-phase3-newArg">
+                    </div>
+                    <div class="select_contentToRead">
+                        请选择一个观点继续阅读：
+                        <br>
+                        <input type="radio" id="option1" name="phase3newArg-Item2-read" value="第一个">
+                        <label for="option1">第一个</label>
+                        <input type="radio" id="option2" name="phase3newArg-Item2-read" value="第二个">
+                        <label for="option2">第二个</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="quality1_eval">
+                        请为第一个观点打分：
+                        <br>
+                        <input type="radio" id="option1" name="phase3newArg-Item2-quality1" value="1分">
+                        <label for="option1">1分</label>
+                        <input type="radio" id="option2" name="phase3newArg-Item2-quality1" value="2分">
+                        <label for="option2">2分</label>
+                        <input type="radio" id="option3" name="phase3newArg-Item2-quality1" value="3分">
+                        <label for="option1">3分</label>
+                        <input type="radio" id="option4" name="phase3newArg-Item2-quality1" value="4分">
+                        <label for="option2">4分</label>
+                        <input type="radio" id="option5" name="phase3newArg-Item2-quality1" value="5分">
+                        <label for="option2">5分</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="quality2_eval">
+                        请为第二个观点打分：
+                        <br>
+                        <input type="radio" id="option1" name="phase3newArg-Item2-quality2" value="1分">
+                        <label for="option1">1分</label>
+                        <input type="radio" id="option2" name="phase3newArg-Item2-quality2" value="2分">
+                        <label for="option2">2分</label>
+                        <input type="radio" id="option3" name="phase3newArg-Item2-quality2" value="3分">
+                        <label for="option1">3分</label>
+                        <input type="radio" id="option4" name="phase3newArg-Item2-quality2" value="4分">
+                        <label for="option2">4分</label>
+                        <input type="radio" id="option5" name="phase3newArg-Item2-quality2" value="5分">
+                        <label for="option2">5分</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="select_p1">
+                        <input type="radio" id="option1" name="phase3newArg-gridItem2-choice" value="是">
+                        <label for="option1">是</label>
+                        <input type="radio" id="option2" name="phase3newArg-gridItem2-choice" value="否">
+                        <label for="option2">否</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                        <p id="outputText"></p>
+                    </div>
+                </div>
+                <div class="grid-item3" id="grid-item3">
+                    <div class="js-item3-phase3-newArg">
+                    </div>
+                    <div class="select_contentToRead">
+                        请选择一个观点继续阅读：
+                        <br>
+                        <input type="radio" id="option1" name="phase3newArg-Item3-read" value="第一个">
+                        <label for="option1">第一个</label>
+                        <input type="radio" id="option2" name="phase3newArg-Item3-read" value="第二个">
+                        <label for="option2">第二个</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="quality1_eval">
+                        请为第一个观点打分：
+                        <br>
+                        <input type="radio" id="option1" name="phase3newArg-Item3-quality1" value="1分">
+                        <label for="option1">1分</label>
+                        <input type="radio" id="option2" name="phase3newArg-Item3-quality1" value="2分">
+                        <label for="option2">2分</label>
+                        <input type="radio" id="option3" name="phase3newArg-Item3-quality1" value="3分">
+                        <label for="option1">3分</label>
+                        <input type="radio" id="option4" name="phase3newArg-Item3-quality1" value="4分">
+                        <label for="option2">4分</label>
+                        <input type="radio" id="option5" name="phase3newArg-Item3-quality1" value="5分">
+                        <label for="option2">5分</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="quality2_eval">
+                        请为第二个观点打分：
+                        <br>
+                        <input type="radio" id="option1" name="phase3newArg-Item3-quality2" value="1分">
+                        <label for="option1">1分</label>
+                        <input type="radio" id="option2" name="phase3newArg-Item3-quality2" value="2分">
+                        <label for="option2">2分</label>
+                        <input type="radio" id="option3" name="phase3newArg-Item3-quality2" value="3分">
+                        <label for="option1">3分</label>
+                        <input type="radio" id="option4" name="phase3newArg-Item3-quality2" value="4分">
+                        <label for="option2">4分</label>
+                        <input type="radio" id="option5" name="phase3newArg-Item3-quality2" value="5分">
+                        <label for="option2">5分</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="select_p1">
+                        <input type="radio" id="option1" name="phase3newArg-gridItem3-choice" value="是">
+                        <label for="option1">是</label>
+                        <input type="radio" id="option2" name="phase3newArg-gridItem3-choice" value="否">
+                        <label for="option2">否</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                        <p id="outputText"></p>
+                    </div>
+                </div>
+                <div class="grid-item4" id="grid-item4">
+                    <div class="js-item4-phase3-newArg">
+                    </div>
+                    <div class="select_contentToRead">
+                        请选择一个观点继续阅读：
+                        <br>
+                        <input type="radio" id="option1" name="phase3newArg-Item4-read" value="第一个">
+                        <label for="option1">第一个</label>
+                        <input type="radio" id="option2" name="phase3newArg-Item4-read" value="第二个">
+                        <label for="option2">第二个</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="quality1_eval">
+                        请为第一个观点打分：
+                        <br>
+                        <input type="radio" id="option1" name="phase3newArg-Item4-quality1" value="1分">
+                        <label for="option1">1分</label>
+                        <input type="radio" id="option2" name="phase3newArg-Item4-quality1" value="2分">
+                        <label for="option2">2分</label>
+                        <input type="radio" id="option3" name="phase3newArg-Item4-quality1" value="3分">
+                        <label for="option1">3分</label>
+                        <input type="radio" id="option4" name="phase3newArg-Item4-quality1" value="4分">
+                        <label for="option2">4分</label>
+                        <input type="radio" id="option5" name="phase3newArg-Item4-quality1" value="5分">
+                        <label for="option2">5分</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="quality2_eval">
+                        请为第二个观点打分：
+                        <br>
+                        <input type="radio" id="option1" name="phase3newArg-Item4-quality2" value="1分">
+                        <label for="option1">1分</label>
+                        <input type="radio" id="option2" name="phase3newArg-Item4-quality2" value="2分">
+                        <label for="option2">2分</label>
+                        <input type="radio" id="option3" name="phase3newArg-Item4-quality2" value="3分">
+                        <label for="option1">3分</label>
+                        <input type="radio" id="option4" name="phase3newArg-Item4-quality2" value="4分">
+                        <label for="option2">4分</label>
+                        <input type="radio" id="option5" name="phase3newArg-Item4-quality2" value="5分">
+                        <label for="option2">5分</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                    </div>
+                    <div class="select_p1">
+                        <input type="radio" id="option1" name="phase3newArg-gridItem4-choice" value="是">
+                        <label for="option1">是</label>
+                        <input type="radio" id="option2" name="phase3newArg-gridItem4-choice" value="否">
+                        <label for="option2">否</label>
+                        <!-- <button class="submit-button-phase1">提交</button> -->
+                        <p id="outputText"></p>
+                    </div>
+                </div>
+            </div>
+            <button class="js-phase3-endGame phase-select-button">点击结束游戏</button>
+        </div>
+        <!-- 底部空白 -->
+        <div class="custom-bottom-space"></div>
+    </div>
+    <script type="module" src="scripts/gamePage.js"></script>
+</body>
+</html>
